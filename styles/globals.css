@@ -1,0 +1,55 @@
+@font-face {
+      font-family: "nora";
+      src: url("../public/fonts/Noora\ Fa-Num\ 03\ Regular.woff");
+}
+@font-face {
+      font-family: "norab";
+      src: url("../public/fonts/Noora\ Fa-Num\ 04\ Bold.woff");
+}
+*{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      box-sizing: border-box;
+      text-decoration: none;}
+body{
+      font-family: "nora",sans-serif;
+      direction: rtl;
+      background:rgb(243, 244, 246) ;
+}
+.container{
+      max-width: 1200px;
+      margin: 0 auto;
+}
+.row{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 16px;
+}
+.col{
+      width: 100%;
+      margin: 16px;
+}
+.section{
+      padding: 16px 0;
+}
+@media screen and (min-width:576px){
+      .col{
+            width: 100%;
+      }
+}
+@media screen and (min-width:768px){
+      .col{
+            width: 50%;
+      }
+}
+@media screen and (min-width:992px){
+      .col{
+            width: 33.33%;
+      }
+}
+@media screen and (min-width:1200px){
+      .col{
+            width: 25%;
+      }
+}
