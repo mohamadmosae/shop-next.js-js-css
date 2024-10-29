@@ -1,0 +1,22 @@
+.aboute{
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 1200px;
+      margin: 30px auto;
+
+}
+.aboute h3{
+      width: 100%;
+      text-align: center;
+}
+.aboute h4{
+      margin: 10px 10px;
+}
+.aboute p span {
+      font-weight: bold;
+}
+.aboute p {
+      margin: 20px 0;
+      text-align: justify;
+}
