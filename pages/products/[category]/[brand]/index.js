@@ -1,13 +1,34 @@
 import { useRouter } from 'next/router'
-import React from 'react'
-
+import React, { useEffect, useState } from 'react'
+import products from "../../../../db.json"
+import ProductCart from '@/Components/ProductCart/ProductCart'
 export default function ShowProductsBybrands() {
-      const route=useRouter()
-      const brand= route.query.brand
-      const category= route.query.category
+      const {category,brand}=useRouter().query
+      const [items,setitems]=useState([])
+      console.log(category);
+      const getitems=(y)=>{
+const x=products[category]?.filter(elem=>elem.brand==y)
+return x
+      }
+      
+      useEffect(()=>{
+      setitems(getitems(brand))
+      },[brand])
   return (
-    <div>
-      <h1>ShowProductsBybrands:{brand}-from-{category}</h1>
+<div className="section">
+
+<div className='container'>
+      <h1>({brand}):{category}</h1>
+<div className="row">
+  {
+items?.map((elem)=>{
+ return <div className="col">
+    <ProductCart key={elem.id} {...elem} />
+  </div>
+})
+  }
+</div>
     </div>
+</div>
   )
 }

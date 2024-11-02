@@ -23,6 +23,7 @@ body{
 }
 .row{
       display: flex;
+      
       flex-wrap: wrap;
       margin: 16px;
 }
@@ -50,6 +51,6 @@ body{
 }
 @media screen and (min-width:1200px){
       .col{
-            width: 25%;
+            width: 20%;
       }
 }

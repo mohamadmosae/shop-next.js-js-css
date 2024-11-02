@@ -16,7 +16,7 @@ export default function MainMenu() {
         <ul>
           <li onMouseEnter={()=>setshowsub(true)}
             onMouseLeave={()=>setshowsub(false)}>
-            <Link href="/products/laptop">لپ تاپ</Link>
+            <Link href="/products/laptops">لپ تاپ</Link>
             <FaAngleDown />
       {
         showsub && <SubMenu/>
@@ -24,21 +24,21 @@ export default function MainMenu() {
           </li>
 
           <li>
-            <Link href="/products/phone">موبایل</Link>
+            <Link href="/products/mobiles">موبایل</Link>
             <FaAngleDown />
           </li>
           <li>
-            <Link href="/products/tablet">تبلت</Link>
-            <FaAngleDown />
-          </li>
-
-          <li>
-            <Link href="/products/camera">دوربین</Link>
+            <Link href="/products/tablets">تبلت</Link>
             <FaAngleDown />
           </li>
 
           <li>
-            <Link href="/products/console">کنسول و بازی</Link>
+            <Link href="/products/cameras">دوربین</Link>
+            <FaAngleDown />
+          </li>
+
+          <li>
+            <Link href="/products/consoles">کنسول و بازی</Link>
             <FaAngleDown />
           </li>
         </ul>

@@ -7,19 +7,25 @@ export default function SubMenu() {
       <div className="container">
         <ul>
           <li>
-            <Link href="/products/laptop/asus">asus</Link>
+            <Link href="/products/laptops/asus">asus</Link>
           </li>
           <li>
-            <Link href="/products/laptop/hp">hp</Link>
+            <Link href="/products/laptops/hp">hp</Link>
           </li>
           <li>
-            <Link href="/products/laptop/dell">dell</Link>
+            <Link href="/products/laptops/dell">dell</Link>
           </li>
           <li>
-            <Link href="/products/laptop/apple">apple</Link>
+            <Link href="/products/laptops/apple">apple</Link>
           </li>
           <li>
-            <Link href="/products/laptop/msi">msi</Link>
+            <Link href="/products/laptops/msi">msi</Link>
+          </li>
+          <li>
+            <Link href="/products/laptops/microsoft">microsoft</Link>
+          </li>
+          <li>
+            <Link href="/products/laptops/microsoft">samsung</Link>
           </li>
         </ul>
       </div>
