@@ -1,6 +1,9 @@
 import ProductCart from "@/Components/ProductCart/ProductCart";
 import products from "../db.json";
+import OffCanvasMenu from "@/Components/OffCanvasMenu/OffCanvasMenu";
+import { useContext } from "react";
 export default function Home() {
+
   return (
     <>
     <div className="section">
@@ -33,7 +36,6 @@ export default function Home() {
 
       </div>
     </div>
-
 
     </>
   );

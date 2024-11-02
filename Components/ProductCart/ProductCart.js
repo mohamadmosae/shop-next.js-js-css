@@ -11,7 +11,7 @@ export default function ProductCart({id,price,image,title,text}) {
     </div>
     <div className={styles.cartfooter}>
       <button>افزودن به سبد خرید</button>
-      <p>{price.toLocaleString()}: تومان</p>
+      <p>{price.toLocaleString()}</p>
     </div>
     </div>
   )

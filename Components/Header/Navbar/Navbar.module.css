@@ -26,7 +26,7 @@ color:rgb(17 17 17) ;
 .navbar ul li:nth-child(1) svg{
       vertical-align: middle;
 }
-@media screen and (max-width:992px) {
+@media screen and (max-width:768px) {
       .navbar ul li:nth-child(1){
             display: block;
       }   

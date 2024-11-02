@@ -1,10 +1,12 @@
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import products from "../../../db.json";
 import ProductCart from "@/Components/ProductCart/ProductCart";
+
 export default function ShowProductsByCategory() {
   const { category } = useRouter().query;
   const [items,setitems]=useState(products[category])
+
   const [searchkey,setsearchkey]=useState(null)
 useEffect(()=>{
 const searchedproducs=products[category]?.filter(item=>item.text.includes(searchkey))
